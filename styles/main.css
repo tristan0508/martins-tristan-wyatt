@@ -1,0 +1,39 @@
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+#fishTank {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 1em;
+    border: 5px solid red;
+
+    
+}
+
+.fishList {
+    flex: 3;
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 25%;
+}
+
+.fishList-card {
+    background-color: coral;
+    margin: 1em;
+}
+
+.card-image {
+    
+}
+
+.fish-image {
+    width:  100%;
+    height: auto;
+
+}
+
+aside {
+    flex: 1;
+    background-color: cadetblue;
+}
