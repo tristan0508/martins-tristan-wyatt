@@ -1,37 +1,123 @@
 body {
-	background-color: aqua;
-	font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
-#fishTank {
-	display: flex;
-	flex-wrap: nowrap;
-	margin: 1em;
-	border: 5px dashed red;
+.navbar {
+    float: right;
+    padding-right: 10px;
+    margin-right: 10px;
+    font-size: 1.5em;    
 }
 
-.fishList{
-	flex: 3;
-	display: flex;
-	flex-wrap: wrap;
+.navbar li {
+    display: inline;
+    
+}
 
+a {
+    color: white;       
+}
+a:hover {
+    color: #ff751a;
+}
+a:visited {
+    color: #0099ff;
+}
+.navbar input {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-left: 16px;
+  font-size: 17px;
+}
+
+.fishTank {
+    
+    display: grid;
+    grid-template-columns: repeat(4, 350px);
+    grid-auto-rows: auto;
+    grid-gap: 10px;
+    justify-content:flex-start;
+    position: relative;
+
+}
+h1 {
+    text-align: center;
+    font-size: 50px;
+    color: #0099ff;
+    background-color: black;
+    border: 5px solid #0099ff;
+    box-shadow: 3px 3px 3px 5px grey;
+}
+h1::before {
+    content: "🐠 ";
+}
+h1::after {
+    content: " 🐠";
+}
+.emphasize {
+    
 }
 .fishList-card {
-	background-color: chartreuse;
-	margin: 1em;
-	flex-basis: 25%;
-	padding: 0 1em;
+   border: 5px solid black;
+    
 }
 
-.card-image {
-
+.ulfish {
+    box-shadow: 5px 5px 3px 5px black;
+    padding: .5em;
+    margin: .5em;
+    max-width: 350px;
+    height: auto;
+    background-color: #0099ff;
 }
-
-.fish-image {
-	width: 100%;
-	height: auto;
+img {
+    max-width: 100%;
+    height: 250px;
+   
+    
+    
 }
-
-aside {
-	flex: 1;
-	background-color: cadetblue;
+.emphasize {
+    text-decoration: underline;
+}
+.ulfish li {
+    background-color: black;
+    color: white;
+    font-size: large;
+    overflow: hidden;
+    
+}
+li::before {
+    content: "🐟.";
+}
+.asideContainer {
+    border: 3px solid black;
+    box-shadow: 5px 5px 5px 5px #0099ff;
+    padding-left: 3px;
+    padding-right: 3px;
+    width: 310px;
+    height: 370px;
+    text-align: left;
+    font-size: large;
+    font-weight: bold;
+    position: absolute;
+    top: 15px;
+    right: 0;
+    background-color: white;
+    
+    
+}
+h3 {
+    background-color: black;
+    color: white;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+}
+h3::before {
+    content: "🎣 ";
+}
+h3::after {
+    content: " 🎣";
+}
