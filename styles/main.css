@@ -32,13 +32,17 @@ a:visited {
 }
 
 .fishTank {
+    position: relative;
+}
+
+.fishList {
     
     display: grid;
     grid-template-columns: repeat(4, 350px);
     grid-auto-rows: auto;
     grid-gap: 10px;
     justify-content:flex-start;
-    position: relative;
+    
 
 }
 h1 {
@@ -96,14 +100,14 @@ li::before {
     box-shadow: 5px 5px 5px 5px #0099ff;
     padding-left: 3px;
     padding-right: 3px;
-    width: 310px;
-    height: 370px;
+    width: 350px;
+    height: auto;
     text-align: left;
     font-size: large;
     font-weight: bold;
     position: absolute;
     top: 15px;
-    right: 0;
+    right: 15px;
     background-color: white;
     
     
